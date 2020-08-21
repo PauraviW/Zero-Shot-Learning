@@ -1,0 +1,15 @@
+The idea of Siamese networks was introduced in the early 90s. Siamese Networks consists of two identical 
+sub-networks which are joined at their outputs. The sub-networks capture a representation of the inputs while the 
+joining neuron captures the similarity between the two representations. Class-to-Class Siamese Network is an 
+architecture based on these Siamese Networks. It is a difference-based approach in which classification is based on 
+learning patterns of both similarities and differences between classes.  A C2C-SN learns patterns from one class Ci 
+to another class Cj. Since C2C-SN are trained between pairs of classes, they can be used to learn the patterns of a 
+class and might help in performing zero-shot learning. The ability to perform case-by-case classification gives 
+rise to the possibility of using this architecture to perform outlier detection. For outlier detection, if any of 
+the case-by-case classifiers fail to classify a given test image, then it can be safely termed as an outlier. For 
+zero-shot learning, image representations can be extracted using the inner layers of a C2C-SN and can be 
+substituted in place of the feature representation of the image in a zero-shot learning framework. In this paper, 
+we explore these two possibilities and study the extent to which C2C-SN can be used to perform outlier detection 
+and zero-shot learning. We show that C2C-SN can be used for outlier detection. The confidence threshold parameter 
+can be tuned. We were able to achieve an accuracy of about 71.48% with a confidence threshold value of 0.999. We 
+also show that C2C-SN fails to perform zero-shot learning with MNIST dataset and the attributes.
